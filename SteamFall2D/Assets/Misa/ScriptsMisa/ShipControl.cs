@@ -31,4 +31,9 @@ public class ShipControl : MonoBehaviour
         Vector2 forceVector = force * direction;
         GetComponent<Rigidbody2D>().AddForce(forceVector, ForceMode2D.Force);
     }
+
+    public void Shoot()
+    {
+
+    }
 }

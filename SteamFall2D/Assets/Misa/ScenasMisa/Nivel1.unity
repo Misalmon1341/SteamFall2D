@@ -408,6 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497465322}
   - component: {fileID: 497465323}
+  - component: {fileID: 497465324}
   m_Layer: 0
   m_Name: Ememigo
   m_TagString: Untagged
@@ -482,6 +483,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &497465324
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497465321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 7275178622278724723, guid: f2f5d83b34a1edc42a847b36b298975e, type: 3}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &505087132
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,6 +1693,7 @@ GameObject:
   - component: {fileID: 1544660912}
   - component: {fileID: 1544660913}
   - component: {fileID: 1544660914}
+  - component: {fileID: 1544660915}
   m_Layer: 0
   m_Name: ShipSprite
   m_TagString: Untagged
@@ -1790,6 +1813,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 0.38999996}
   m_EdgeRadius: 0
+--- !u!95 &1544660915
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544660911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: -7069284931657906121, guid: e70b39f2b99aad245977289714b9e372, type: 3}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1696512275
 GameObject:
   m_ObjectHideFlags: 0

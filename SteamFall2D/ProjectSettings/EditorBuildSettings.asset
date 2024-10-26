@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes Principales Alex/MenuDeInicio.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes Principales Alex/MenuPrincipal.unity
+    guid: d19f92fd1d6474270befd88b4eef5665
+  - enabled: 1
+    path: Assets/Scenes Principales Alex/MenuTienda.unity
+    guid: 3f7026f9675484812b9e82e1d608e4ab
+  - enabled: 1
+    path: Assets/Scenes Principales Alex/Configuracion.unity
+    guid: 8506591dad8c34265b568ea1b04d7d87
+  - enabled: 1
+    path: Assets/Scenes Principales Alex/Reanudar.unity
+    guid: cd07bf08030894148a22a98f1169a0c3
+  - enabled: 1
+    path: Assets/Scenes Principales Alex/Archivo.unity
+    guid: 48c11fbae909842dda420c1fa016b4a2
+  - enabled: 1
+    path: Assets/Scenes Principales Alex/SeleccionNivel.unity
+    guid: 713a65595b8734b2d8781e844d1c6cac
   m_configObjects: {}

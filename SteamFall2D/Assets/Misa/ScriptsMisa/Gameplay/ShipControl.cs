@@ -6,6 +6,7 @@ public class ShipControl : MonoBehaviour
 {
     public float force = -3f;
     public float drag = 6f;
+    public float lowSpeed = 0.3f;
 
 
     private void Awake()
@@ -16,10 +17,10 @@ public class ShipControl : MonoBehaviour
     {
         Movement();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKey(KeyCode.Space))
         {
-            
-        }
+           force = lowSpeed;
+        }*/
     }
 
     public void Movement()
@@ -31,6 +32,8 @@ public class ShipControl : MonoBehaviour
         Vector2 forceVector = force * direction;
         GetComponent<Rigidbody2D>().AddForce(forceVector, ForceMode2D.Force);
     }
+
+
 
     public void Shoot()
     {

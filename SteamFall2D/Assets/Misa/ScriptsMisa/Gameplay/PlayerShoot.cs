@@ -13,7 +13,7 @@ public class PlayerShoot : MonoBehaviour
     bool poderDisparar = true;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H) && poderDisparar)
+        if (Input.GetKeyDown(KeyCode.Z) && poderDisparar)
         {
             Disparar();
         }

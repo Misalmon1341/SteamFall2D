@@ -6,7 +6,7 @@ public class Proyectil : MonoBehaviour
 {
     [SerializeField] private float velocidad;
 
-    [SerializeField] private float daño;
+    [SerializeField] private int daño;
 
     [SerializeField] private float tiempoObjeto;
 
@@ -22,9 +22,10 @@ public class Proyectil : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag(""))
+        if (other.TryGetComponent(out VidaeNEMY vidaEnemigo))
         {
-
+            vidaEnemigo.TomarDaño(daño);
+            Destroy(gameObject);
         }
     }
 }

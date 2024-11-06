@@ -25,7 +25,6 @@ public class Proyectil : MonoBehaviour
         if (other.TryGetComponent(out VidaeNEMY vidaEnemigo))
         {
             vidaEnemigo.TomarDaño(daño);
-            Destroy(gameObject);
         }
     }
 }

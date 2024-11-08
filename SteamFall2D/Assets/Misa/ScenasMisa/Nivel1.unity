@@ -265,7 +265,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a0102e4bf131b540902231759c8380d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cantidadVida: 5
+  vidaActual: 5
+  vidaMaxima: 5
+  cambioVida:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &82029325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -780,6 +784,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 777489522}
+  - {fileID: 1530398889}
   - {fileID: 405917269}
   - {fileID: 795708168}
   - {fileID: 1008747778}
@@ -914,7 +919,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.91711426, w: -0.91708374}
+  m_margin: {x: 0, y: -3.123001, z: 0.91711426, w: -0.91708374}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1074,7 +1079,7 @@ GameObject:
   - component: {fileID: 795708170}
   - component: {fileID: 795708169}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1887,7 +1892,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cantidadvida: 3
-  puntaje: 0
+  cantidadPuntos: 100
+  puntaje: {fileID: 927520363}
+--- !u!1 &1530398888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530398889}
+  - component: {fileID: 1530398891}
+  - component: {fileID: 1530398890}
+  m_Layer: 5
+  m_Name: Corazones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1530398889
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530398888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 640069385}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 33.03528, y: -34.94629}
+  m_SizeDelta: {x: 67.9269, y: 68.5682}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1530398890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530398888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1901b4754d502134ea2374cb25c6ac08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listaCorazones: []
+  corazonPrefab: {fileID: 1452828902882303134, guid: 80364c49b486f9b42a6e6bb00379b4ef, type: 3}
+  vidaJugador: {fileID: 82029324}
+  indexActual: 0
+  corazonLleno: {fileID: -317883541, guid: 0c297a29a542c744a8961dd89f92aefb, type: 3}
+  corazonVacio: {fileID: -156805369, guid: 3cfd4885d982df84c9bc8da5c7723e75, type: 3}
+--- !u!114 &1530398891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530398888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 10
+    m_Right: 0
+    m_Top: 12
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 50, y: 40}
+  m_Spacing: {x: 10, y: 10}
+  m_Constraint: 1
+  m_ConstraintCount: 3
 --- !u!1 &1544660911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,7 +2150,7 @@ MonoBehaviour:
   numBulletsPerWave: 30
   numArms: 10
   bulletSpeed: 4
-  bulletsLifeSpan: 3
+  bulletsLifeSpan: 1
   bulletPrefab: {fileID: 3279399428356278373, guid: d7a12947ff8be474d8b624940090d2f7, type: 3}
 --- !u!1 &1841177539
 GameObject:

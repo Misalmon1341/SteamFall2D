@@ -5,18 +5,20 @@ using UnityEngine;
 public class VidaeNEMY : Puntaje
 {
     public float cantidadvida;
-    public float puntaje;
+    public float cantidadPuntos;
 
+    [SerializeField] private Puntaje puntaje;
     public void TomarDaño(int daño)
     {
         cantidadvida =- daño;
         if (cantidadvida <= 0f)
         {
-            //Puntaje Sumarpuntos(puntaje);
+            puntaje.SumarPuntos(cantidadPuntos);
             Destroy(gameObject);
         }
     }
 
 }
+
 
 
